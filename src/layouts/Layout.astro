@@ -1,0 +1,43 @@
+---
+import '@fontsource/roboto';
+import '@fontsource/montserrat';
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Todo sobre los lentes: física óptica, tipos, funcionamiento y aplicaciones en salud ocular" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<title>{title}</title>
+	</head>
+	<body class="font-roboto bg-[url('/home/user/lentes/src/assets/background.jpg')] bg-cover bg-no-repeat min-h-screen ">
+		<header>
+			<nav class="fixed w-full backdrop-blur-sm z-40">
+			<div class="container mx-auto px-4 py-3">
+				<div class="flex justify-between items-center">
+					<a href="/" class="font-montserrat text-xl font-bold text-accent">Lentes</a>
+					<div class="hidden md:flex space-x-6">
+						<a href="#introduccion" class="hover:text-accent">Intro</a>
+						<a href="#tipos" class="hover:text-accent">Tipos</a>
+						<a href="#funcionamiento" class="hover:text-accent">Funcionamiento</a>
+						<a href="#refraccion" class="hover:text-accent">Ley de Snell</a>
+						<a href="#salud" class="hover:text-accent">Salud Ocular</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+		</header>
+		
+		<main class="container mx-auto px-4 pt-20">
+			<slot />
+		</main>
+	</body>
+</html>

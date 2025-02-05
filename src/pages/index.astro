@@ -1,0 +1,83 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Todo sobre los lentes">
+	<div class="max-w-4xl mx-auto">
+		<section id="introduccion" class="mb-16">
+			<h1 class="font-montserrat text-4xl font-bold text-accent mb-8 text-center">
+				¿Qué son los lentes?
+			</h1>
+			<div class="p-2">
+				<p class="font-montserrat text-lg font-bold text-accent  mb-4">
+					Un lente es un dispositivo óptico transparente, generalmente fabricado de vidrio, plástico u otro material con propiedades refractivas, que tiene una o dos superficies curvas (o una plana y otra curva). Los lentes están diseñados para manipular la trayectoria de los rayos de luz mediante el fenómeno de refracción , con el objetivo de enfocar, dispersar o corregir la luz para formar imágenes claras en un punto específico. La física óptica estudia cómo los lentes controlan la luz para aplicaciones como la corrección visual, la formación de imágenes en cámaras y telescopios, entre otros.
+				</p>
+			</div>
+		</section>
+
+		<section id="tipos" class=" backdrop-blur-sm p-20 rounded-lg mb-16">
+			<h2 class="font-montserrat text-3xl font-bold text-accent drop-shadow-sm mb-8">
+				Tipos de lentes y sus características
+			</h2>
+			<figure class="bg-white flex flex-col items-center justify-center rounded-lg ">
+				<img src="/src/assets/tiposLentes.png" alt="lentes" class="min-w-100%">
+			</figure>
+			<div class="m-10">
+				<div class="max-w-30">
+					<h3 class="font-montserrat text-xl font-bold text-accent mb-4">Lentes divergentes</h3>
+					<p>Estos lentes hacen que los rayos de luz paralelos se dispersen, como si provenieran de un punto focal virtual. Son más delgados en el centro que en los bordes.</p>
+				</div>
+				<div>
+					<h3 class="font-montserrat text-xl font-bold text-accent mb-4">Lentes convergentes</h3>
+					<p></p>
+				</div>
+			</div>
+		</section>
+
+		<section id="funcionamiento" class="backdrop-blur-sm p-20 mb-16">
+			<h2 class="font-montserrat text-3xl font-bold text-accent mb-8">
+				¿Cómo funcionan los lentes?
+			</h2>
+			<div class="bg-white rounded-lg shadow-md p-8">
+				<p class="mb-4">
+					Los lentes funcionan manipulando la trayectoria de la luz a través del fenómeno de la refracción. Cuando la luz pasa a través de un lente, su velocidad y dirección cambian debido a la diferencia en el índice de refracción entre el aire y el material del lente.
+				</p>
+			</div>
+		</section>
+
+		<section id="refraccion" class="mb-16">
+			<h2 class="font-montserrat text-3xl font-bold text-accent mb-8">
+				La ley de refracción de la luz
+			</h2>
+			<div class="bg-white rounded-lg shadow-md p-8">
+				<p class="mb-4">
+					La Ley de Snell describe matemáticamente cómo se refracta la luz al pasar de un medio a otro. Esta ley establece que el producto del índice de refracción por el seno del ángulo de incidencia es constante.
+				</p>
+			</div>
+		</section>
+
+		<section id="salud" class="mb-16">
+			<h2 class="font-montserrat text-3xl font-bold text-accent mb-8">
+				Enfermedades oculares y corrección con lentes
+			</h2>
+			<div class="grid md:grid-cols-2 gap-8">
+				<div class="bg-white rounded-lg shadow-md p-8">
+					<h3 class="font-montserrat text-xl font-bold mb-4">Miopía</h3>
+					<p>Corrección mediante lentes divergentes que ayudan a enfocar objetos lejanos.</p>
+				</div>
+				<div class="bg-white rounded-lg shadow-md p-8">
+					<h3 class="font-montserrat text-xl font-bold mb-4">Hipermetropía</h3>
+					<p>Corrección mediante lentes convergentes que ayudan a enfocar objetos cercanos.</p>
+				</div>
+				<div class="bg-white rounded-lg shadow-md p-8">
+					<h3 class="font-montserrat text-xl font-bold mb-4">Astigmatismo</h3>
+					<p>Corrección mediante lentes cilíndricos que compensan la curvatura irregular de la córnea.</p>
+				</div>
+				<div class="bg-white rounded-lg shadow-md p-8">
+					<h3 class="font-montserrat text-xl font-bold mb-4">Presbicia</h3>
+					<p>Uso de lentes bifocales o multifocales para mejorar la visión tanto de cerca como de lejos.</p>
+				</div>
+			</div>
+		</section>
+	</div>
+</Layout>
