@@ -6,7 +6,7 @@ export default {
       colors: {
         'primary': '#E0F7FA',
         'secondary': '#F5F5F5',
-        'accent': '#121214',
+        'accent': '#f4f4f4',
       },
       fontFamily: {
         'roboto': ['Roboto', 'sans-serif'],
